@@ -18,18 +18,57 @@ body {
   font-family: 'Karla', sans-serif;
   font-size: 1rem;
   background-color: var(--light-gray);
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 16.875rem 16.875rem;
+  grid-template-rows: 11rem 11rem 1rem;
+  justify-content: center;
+  place-content: center;
+  grid-template-areas: 
+    "topsect topsect"
+    "sect1 sect2"
+    "footer footer";
+  
+}
+
+.one--container {
+  background-color: white;
+  grid-area: topsect;
+  min-width: 11rem;
+  min-height: 16.875rem;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
 }
 
 
+.two--container {
+  background-color: var(--cyan-);
+  grid-area: sect1;
+  min-width: 16.875rem;
+  min-height: 11rem;
+  border-bottom-left-radius: 0.625rem;
+}
+
+.three--container {
+  background-color: var(--cyan-);
+  grid-area: sect2;
+  min-width: 16.875rem;
+  min-height: 11rem;
+  border-bottom-right-radius: 0.625rem;
+}
 
 
+.attribution { 
+font-size: 0.68rem; 
+text-align: center;
+grid-area: footer; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
 
 
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer {
+  grid-area: footer;
+}
