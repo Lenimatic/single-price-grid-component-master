@@ -16,18 +16,17 @@
 
 body {
   font-family: 'Karla', sans-serif;
-  font-size: 1rem;
   background-color: var(--light-gray);
   min-height: 100vh;
   display: grid;
   grid-template-columns: 16.875rem 16.875rem;
-  grid-template-rows: 11rem 11rem 1rem;
+  grid-template-rows: 13rem 13rem 1rem;
   justify-content: center;
   place-content: center;
   grid-template-areas: 
     "topsect topsect"
     "sect1 sect2"
-    "footer footer";
+    "footer footer";  
   
 }
 
@@ -35,9 +34,31 @@ body {
   background-color: white;
   grid-area: topsect;
   min-width: 11rem;
-  min-height: 16.875rem;
+  min-height: 12rem;
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
+  box-shadow: 10px 10px 103px -70px rgba(0,0,0,0.75);
+  padding: 1.87rem;
+}
+
+h1 {
+  color: var(--cyan-);
+  margin-bottom: 0.99rem;
+  font-size: 1.5rem;
+  margin-top: 1.1rem;
+}
+
+.one--container .colourtext {
+  margin-bottom: 0.40rem;
+  color: var(--bright-yellow);
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.one--container p {
+  font-size: 0.80rem;
+  line-height: 1.5rem;
+  width: 28.1rem;
 }
 
 
@@ -45,18 +66,74 @@ body {
   background-color: var(--cyan-);
   grid-area: sect1;
   min-width: 16.875rem;
-  min-height: 11rem;
+  min-height: 13rem;
   border-bottom-left-radius: 0.625rem;
+  opacity: 0.9;
+  padding: 1.87rem;
 }
+
+.two--container span {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: white;
+  margin-right: 0.70rem;
+  
+}
+
+.two--container h2 {
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.90rem;
+}
+
+.two--container p {
+  font-size: 0.8rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.container .secondpara {
+  opacity: 0.5;
+}
+
+button {
+  padding: 10px 75px;
+  background-color: var(--bright-yellow);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  margin-top: 1.3rem;
+  cursor: pointer;
+}
+
 
 .three--container {
   background-color: var(--cyan-);
   grid-area: sect2;
   min-width: 16.875rem;
-  min-height: 11rem;
+  min-height: 13rem;
   border-bottom-right-radius: 0.625rem;
+  opacity: 0.8;
+  padding: 1.87rem;
 }
 
+.three--container p {
+  color: white;
+  font-size: 0.75rem;
+  margin-top: 0.80rem;
+  width: 8.6rem;
+  line-height: 1rem;
+  opacity: 0.6;
+}
+
+h2 {
+  font-size: 1rem;
+  color: white;
+}
 
 .attribution { 
 font-size: 0.68rem; 
@@ -67,7 +144,6 @@ grid-area: footer;
 .attribution a { 
   color: hsl(228, 45%, 44%); 
 }
-
 
 footer {
   grid-area: footer;
