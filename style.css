@@ -107,6 +107,7 @@ button {
   border: none;
   color: white;
   margin-top: 1.3rem;
+  box-shadow: 10px 10px 103px -70px rgba(0,0,0,0.75);
   cursor: pointer;
 }
 
@@ -147,4 +148,77 @@ grid-area: footer;
 
 footer {
   grid-area: footer;
+}
+
+@media (max-width: 40.94rem) {
+  body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 18.875rem;
+    grid-template-rows: 16rem ;
+    justify-content: center;
+    place-content: center;
+    grid-template-areas: 
+      "topsect"
+      "sect1"
+      "sect2"
+      "footer";  
+  }
+
+  .one--container {
+    background-color: white;
+    grid-area: topsect;
+    min-width: 11rem;
+    min-height: 12rem;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    box-shadow: 10px 10px 103px -70px rgba(0,0,0,0.75);
+    padding: 1.87rem;
+  }
+
+  .one--container h1 {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
+  .one--container .colourtext {
+    font-size: .8rem;
+    width: 12rem;
+    
+  }
+
+  .one--container p {
+    width: 16rem;
+  }
+    
+  .two--container {
+    background-color: var(--cyan-);
+    grid-area: sect1;
+    min-width: 16.875rem;
+    min-height: 13rem;
+    border-bottom-left-radius: 0;
+    opacity: 0.9;
+    padding: 1.87rem;
+  }
+
+  .three--container {
+    background-color: var(--cyan-);
+    grid-area: sect2;
+    min-width: 16.875rem;
+    min-height: 13rem;
+    border-bottom-right-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    opacity: 0.8;
+    padding: 1.87rem;
+  }
+
+  .three--container {
+    font-size: .90rem;
+  }
+
+
+
+
 }
